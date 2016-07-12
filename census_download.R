@@ -6,22 +6,28 @@ setwd(wd)
 table_list <- read.csv("census_table_download.csv")
 str(table_list)
 
-# example
+# example download link
 # "http://www.nomisweb.co.uk/output/census/2011/ks101ew_2011_oa.zip"
+
 
 tables_to_download <- table_list$Table.number[table_list$Download == 'Yes']
 tables_to_download <- tolower(tables_to_download)
 
+
+# download files using table names from csv
 for (i in tables_to_download) {
   file_url <- paste("http://www.nomisweb.co.uk/output/census/2011/",i,"_2011_oa.zip",sep = "")
   saved_name <- paste(wd,"/",i,".zip",sep = "")
   download.file(file_url,saved_name)
 }
 
+
 file_info <- file.info(dir(wd,pattern = ".zip"))
 
+# some didnt download, try those again
 retry_tables <- tables_to_download %in% substr(rownames(file_info[file_info$size > 100000,]),1,7)
 retry_tables <- tables_to_download[!retry_tables]
+
 
 for (i in retry_tables) {
   file_url <- paste("http://www.nomisweb.co.uk/output/census/2011/",i,"_2011_oa.zip",sep = "")
@@ -45,25 +51,23 @@ for (i in folders_to_check) {
   file_names <- list.files(i, pattern = "DATA.CSV")
   
   for (j in file_paths) {
-    file.copy(file_paths,paste(wd,"/data_extracts/",file_names,sep = ""),)
+    file.copy(file_paths,paste(wd,"/data_extracts/",file_names,sep = ""))
   }
 }
 
 
+#gather file names and read data into list
 data_files <- list.files(paste(wd,"/data_extracts",sep = ""))
 
-geog_list <- data.frame()
-
-count <- 1
+dat <- list()
 
 for (i in data_files) {
-  dat <- read.csv(paste(wd,"/data_extracts/",i,sep = ""))
-
-  geog_list <- rbind(geog_list, data.frame(file_id = count, geog =  dat[,1]))
-  count <- count + 1
+  dat[[i]] <- read.csv(paste(wd,"/data_extracts/",i,sep = ""))
 }
 
-table(geog_list[,1])
+# merge list elements into single data frame
+complete <- Reduce(function(x,y){merge(x,y,all=TRUE)},dat)
 
-unique_geog <- unique(geog_list[2])
-nrow(unique_geog)
+rm(dat)
+
+head(complete)
