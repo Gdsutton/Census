@@ -5,14 +5,12 @@
 # Gavin Sutton
 # 20160712
 
-census_wd <- getwd()
-census_wd 
-setwd(census_wd)
+
+wd <- "C:/Users/gavins/Documents/GitHub/Census/"
+setwd(wd)
 
 library(stringr)
-
 table_list <- read.csv("census_table_download.csv")
-str(table_list)
 
 # example download link
 # "http://www.nomisweb.co.uk/output/census/2011/ks101ew_2011_oa.zip"
@@ -45,6 +43,7 @@ for (i in retry_tables) {
 for (i in tables_to_download) {
   saved_name <- paste(wd,"/",i,".zip",sep = "")
   unzip(saved_name,exdir = paste(wd,"/zip_output",sep = ""))
+  file.remove(saved_name)
 }
 
 # list subfolders
@@ -77,7 +76,11 @@ for (i in tables_to_download) {
   
 }
 
+
 # merge list elements into single data frame
 complete <- Reduce(function(x,y){merge(x,y,all=TRUE)},dat)
 
-write.csv(complete,"Census_KS_OA_Combined.csv")
+write.csv(complete,"Census_KS_OA_Combined.csv",row.names = FALSE)
+
+
+
