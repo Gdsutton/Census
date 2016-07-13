@@ -1,36 +1,36 @@
-Table number,Type of table,Table title,Welsh language version,Download
-KS101EW,Key Statistics (KS),Usual resident population,Yes,Yes
-KS102EW,Key Statistics (KS),Age structure,Yes,Yes
-KS103EW,Key Statistics (KS),Marital and civil partnership status,Yes,Yes
-KS104EW,Key Statistics (KS),Living arrangements,Yes,Yes
-KS105EW,Key Statistics (KS),Household composition,Yes,Yes
-KS106EW,Key Statistics (KS),Adults not in employment and dependent children and persons with long-term health problem or disability for all households,Yes,Yes
-KS107EW,Key Statistics (KS),Lone parent households with dependent children,Yes,Yes
-KS201EW,Key Statistics (KS),Ethnic group,Yes,Yes
-KS202EW,Key Statistics (KS),National identity,Yes,Yes
-KS204EW,Key Statistics (KS),Country of birth,Yes,Yes
-KS205EW,Key Statistics (KS),Passports held,Yes,Yes
-KS206EW,Key Statistics (KS),Household language,Yes,Yes
-KS207WA,Key Statistics (KS),Welsh language skills,Yes,Yes
-KS208WA,Key Statistics (KS),Welsh language profile,Yes,Yes
-KS209EW,Key Statistics (KS),Religion,Yes,Yes
-KS301EW,Key Statistics (KS),Health and provision of unpaid care,Yes,Yes
-KS401EW,Key Statistics (KS),"Dwellings, household spaces and accommodation type",Yes,Yes
-KS402EW,Key Statistics (KS),Tenure,Yes,Yes
-KS403EW,Key Statistics (KS),"Rooms, bedrooms and central heating",Yes,Yes
-KS404EW,Key Statistics (KS),Car or van availability,Yes,Yes
-KS405EW,Key Statistics (KS),Communal establishment residents,Yes,Yes
-KS501EW,Key Statistics (KS),Qualifications and students,Yes,Yes
-KS601EW,Key Statistics (KS),Economic activity,Yes,Yes
-KS602EW,Key Statistics (KS),Economic activity - Males,Yes,No
-KS603EW,Key Statistics (KS),Economic activity - Females,Yes,No
-KS604EW,Key Statistics (KS),Hours worked,Yes,Yes
-KS605EW,Key Statistics (KS),Industry,Yes,Yes
-KS606EW,Key Statistics (KS),Industry - Males,Yes,No
-KS607EW,Key Statistics (KS),Industry - Females,Yes,No
-KS608EW,Key Statistics (KS),Occupation,Yes,Yes
-KS609EW,Key Statistics (KS),Occupation - Males,Yes,No
-KS610EW,Key Statistics (KS),Occupation - Females,Yes,No
-KS611EW,Key Statistics (KS),NS-SeC,Yes,Yes
-KS612EW,Key Statistics (KS),NS-SeC - Males,Yes,No
-KS613EW,Key Statistics (KS),NS-SeC - Females,Yes,No
+Table number,Type of table,Table title,Welsh language version,Download,Column_Begin
+KS101EW,Key Statistics (KS),Usual resident population,Yes,Yes,7
+KS102EW,Key Statistics (KS),Age structure,Yes,Yes,18
+KS103EW,Key Statistics (KS),Marital and civil partnership status,Yes,Yes,8
+KS104EW,Key Statistics (KS),Living arrangements,Yes,Yes,9
+KS105EW,Key Statistics (KS),Household composition,Yes,Yes,17
+KS106EW,Key Statistics (KS),Adults not in employment and dependent children and persons with long-term health problem or disability for all households,Yes,Yes,8
+KS107EW,Key Statistics (KS),Lone parent households with dependent children,Yes,Yes,13
+KS201EW,Key Statistics (KS),Ethnic group,Yes,Yes,21
+KS202EW,Key Statistics (KS),National identity,Yes,Yes,42
+KS204EW,Key Statistics (KS),Country of birth,Yes,Yes,11
+KS205EW,Key Statistics (KS),Passports held,Yes,Yes,14
+KS206EW,Key Statistics (KS),Household language,Yes,Yes,6
+KS207WA,Key Statistics (KS),Welsh language skills,Yes,No,9
+KS208WA,Key Statistics (KS),Welsh language profile,Yes,No,16
+KS209EW,Key Statistics (KS),Religion,Yes,Yes,11
+KS301EW,Key Statistics (KS),Health and provision of unpaid care,Yes,Yes,17
+KS401EW,Key Statistics (KS),"Dwellings, household spaces and accommodation type",Yes,Yes,15
+KS402EW,Key Statistics (KS),Tenure,Yes,Yes,10
+KS403EW,Key Statistics (KS),"Rooms, bedrooms and central heating",Yes,Yes,6
+KS404EW,Key Statistics (KS),Car or van availability,Yes,Yes,8
+KS405EW,Key Statistics (KS),Communal establishment residents,Yes,Yes,15
+KS501EW,Key Statistics (KS),Qualifications and students,Yes,Yes,14
+KS601EW,Key Statistics (KS),Economic activity,Yes,Yes,16
+KS602EW,Key Statistics (KS),Economic activity - Males,Yes,No,16
+KS603EW,Key Statistics (KS),Economic activity - Females,Yes,No,16
+KS604EW,Key Statistics (KS),Hours worked,Yes,Yes,16
+KS605EW,Key Statistics (KS),Industry,Yes,Yes,20
+KS606EW,Key Statistics (KS),Industry - Males,Yes,No,20
+KS607EW,Key Statistics (KS),Industry - Females,Yes,No,20
+KS608EW,Key Statistics (KS),Occupation,Yes,Yes,11
+KS609EW,Key Statistics (KS),Occupation - Males,Yes,No,11
+KS610EW,Key Statistics (KS),Occupation - Females,Yes,No,11
+KS611EW,Key Statistics (KS),NS-SeC,Yes,Yes,17
+KS612EW,Key Statistics (KS),NS-SeC - Males,Yes,No,17
+KS613EW,Key Statistics (KS),NS-SeC - Females,Yes,No,17
